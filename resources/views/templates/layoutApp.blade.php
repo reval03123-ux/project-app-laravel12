@@ -102,6 +102,7 @@
     <!--begin::Required Plugin(AdminLTE)-->
     <link rel="stylesheet" href="{{ asset('assets/css/adminlte.css') }}" />
     <!--end::Required Plugin(AdminLTE)-->
+    @stack('style')
   </head>
   <!--end::Head-->
   <!--begin::Body-->
@@ -114,4 +115,5 @@
         @yield('content')
       </main>
       <!--end::App Main-->
+      @yield('modal')
       @include('templates.footer')
